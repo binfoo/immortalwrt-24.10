@@ -1,4 +1,4 @@
--- Copyright (C) 2021 dz <dingzhong110@gmail.com>
+-- TorGuard.net
 
 module("luci.controller.easymesh", package.seeall)
 
@@ -8,7 +8,8 @@ function index()
 	end
 
 	local page
-	page = entry({"admin", "network", "easymesh"}, cbi("easymesh"), _("EASY MESH"), 60)
+
+	page = entry({"admin", "network", "easymesh"}, cbi("easymesh"), _("Easy Mesh"), 60)
 	page.dependent = true
 	page.acl_depends = { "luci-app-easymesh" }
 end
